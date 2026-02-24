@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>サンプルサイト | トップ</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>サンプルサイト</span>
+      </a>
+      <nav class="nav" aria-label="メインメニュー">
+        <a href="./index.html" aria-current="page">トップ</a>
+        <a href="./pages/about.html">テキスト</a>
+        <a href="./pages/contact.html">問い合わせ</a>
+        <a href="./pages/game.html">ゲーム</a>
+        <a href="./pages/board.html">ブログ/掲示板</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <span class="badge">Phase A: HTML/CSSのみ</span>
+      <h1>レスポンシブ対応サイトの土台</h1>
+      <p>ここからA→B→Cの順で、見た目→ゲーム→送信/投稿機能へ拡張していきます。</p>
+      <a class="btn" href="./pages/about.html">まずはテキストページを見る →</a>
+    </section>
+
+    <section class="grid" aria-label="ページ一覧">
+      <article class="card">
+        <span class="badge">Text</span>
+        <h2>テキスト掲載ページ</h2>
+        <p>会社概要/サービス説明など、文章中心のページ。</p>
+        <div class="actions">
+          <a class="btn" href="./pages/about.html">開く</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="badge">Form (UI only)</span>
+        <h2>問い合わせフォーム</h2>
+        <p>Phase Aでは“画面だけ”。送信はPhase Cで実装します。</p>
+        <div class="actions">
+          <a class="btn" href="./pages/contact.html">開く</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="badge">Game (UI only)</span>
+        <h2>タイピングゲーム</h2>
+        <p>Phase Aでは“見た目だけ”。Phase BでJavaScriptを追加して動かします。</p>
+        <div class="actions">
+          <a class="btn" href="./pages/game.html">開く</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="badge">Board (UI only)</span>
+        <h2>ブログ / 掲示板</h2>
+        <p>Phase Aは静的レイアウト。Phase Cで投稿・保存を追加。</p>
+        <div class="actions">
+          <a class="btn" href="./pages/board.html">開く</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="y"></span> mm creation</div>
+  </footer>
+
+  <script>
+    // 年だけ（見た目用。気になるならAでは消してOK）
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
