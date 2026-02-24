@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>サンプルサイト | ブログ/掲示板</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>サンプルサイト</span>
+      </a>
+      <nav class="nav" aria-label="メインメニュー">
+        <a href="../index.html">トップ</a>
+        <a href="./about.html">テキスト</a>
+        <a href="./contact.html">問い合わせ</a>
+        <a href="./game.html">ゲーム</a>
+        <a href="./board.html" aria-current="page">ブログ/掲示板</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="panel">
+      <h1>ブログ / 掲示板（Phase A：レイアウトのみ）</h1>
+      <p>Phase Cで「投稿→保存→一覧反映」を実装します。今はダミー表示です。</p>
+
+      <div class="hr"></div>
+
+      <div class="grid" style="padding:0;">
+        <article class="card" style="grid-column: span 7;">
+          <span class="badge">最新投稿</span>
+          <h2>サイト制作、はじめました</h2>
+          <p>まずはAフェーズとして、レスポンシブ対応の骨組みを作成中。</p>
+          <div class="actions">
+            <a class="btn" href="#">続きを読む（Cで実装）</a>
+          </div>
+        </article>
+
+        <aside class="card" style="grid-column: span 5;">
+          <span class="badge">投稿フォーム（UIのみ）</span>
+          <h2>新規投稿</h2>
+          <form class="form" action="#" method="post">
+            <div class="field">
+              <label for="title">タイトル</label>
+              <input id="title" type="text" placeholder="例）今日のアップデート" disabled />
+            </div>
+            <div class="field">
+              <label for="body">本文</label>
+              <textarea id="body" placeholder="本文を入力" disabled></textarea>
+            </div>
+            <button class="btn" type="button" disabled>投稿（Cで実装）</button>
+          </form>
+        </aside>
+      </div>
+
+      <div class="hr"></div>
+      <a class="btn" href="../index.html">← トップへ戻る</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Sample Site</div>
+  </footer>
+</body>
+</html>

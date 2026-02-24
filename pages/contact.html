@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>サンプルサイト | 問い合わせ</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>サンプルサイト</span>
+      </a>
+      <nav class="nav" aria-label="メインメニュー">
+        <a href="../index.html">トップ</a>
+        <a href="./about.html">テキスト</a>
+        <a href="./contact.html" aria-current="page">問い合わせ</a>
+        <a href="./game.html">ゲーム</a>
+        <a href="./board.html">ブログ/掲示板</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="panel">
+      <h1>問い合わせフォーム（Phase A：画面のみ）</h1>
+      <p>送信処理はまだありません。Phase Cで「メール送信」や「API連携」を追加します。</p>
+
+      <form class="form" action="#" method="post">
+        <div class="field">
+          <label for="name">お名前</label>
+          <input id="name" name="name" type="text" placeholder="例）黒村 ゆかり" />
+        </div>
+
+        <div class="field">
+          <label for="email">メールアドレス</label>
+          <input id="email" name="email" type="email" placeholder="example@mail.com" />
+        </div>
+
+        <div class="field">
+          <label for="topic">お問い合わせ種別</label>
+          <select id="topic" name="topic">
+            <option>ご相談</option>
+            <option>見積もり</option>
+            <option>不具合報告</option>
+            <option>その他</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">内容</label>
+          <textarea id="message" name="message" placeholder="お問い合わせ内容を入力してください"></textarea>
+        </div>
+
+        <div style="display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn" type="button" disabled title="Phase Cで有効化します">送信（まだ使えません）</button>
+          <a class="btn" href="../index.html">トップへ戻る</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Sample Site</div>
+  </footer>
+</body>
+</html>

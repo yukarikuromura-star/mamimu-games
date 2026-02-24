@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>サンプルサイト | テキスト</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html">
+        <span class="logo" aria-hidden="true"></span>
+        <span>サンプルサイト</span>
+      </a>
+      <nav class="nav" aria-label="メインメニュー">
+        <a href="../index.html">トップ</a>
+        <a href="./about.html" aria-current="page">テキスト</a>
+        <a href="./contact.html">問い合わせ</a>
+        <a href="./game.html">ゲーム</a>
+        <a href="./board.html">ブログ/掲示板</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container page">
+    <section class="panel">
+      <h1>テキスト掲載ページ</h1>
+      <p>ここは文章中心のテンプレ。見出し・段落・リストの見た目を整えています。</p>
+
+      <div class="hr"></div>
+
+      <h2 style="margin:0 0 8px; font-size: var(--h2);">見出し例</h2>
+      <p>
+        レスポンシブ対応は、余白と文字サイズを <code>clamp()</code> で調整し、
+        レイアウトは <code>grid</code> / <code>flex</code> を基本にしています。
+      </p>
+
+      <ul style="margin:0; padding-left: 18px; color: var(--muted);">
+        <li>スマホでも読みやすい文字サイズ</li>
+        <li>ナビは折り返して崩れにくい</li>
+        <li>カード型で情報を整理</li>
+      </ul>
+
+      <div class="hr"></div>
+
+      <a class="btn" href="../index.html">← トップへ戻る</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© Sample Site</div>
+  </footer>
+</body>
+</html>
